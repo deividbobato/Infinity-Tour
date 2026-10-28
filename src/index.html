@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Tour | Turismo em Foz do Iguaçu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="topo">
+      <div class="container header__inner">
+        <a href="#inicio" class="logo">
+          <span class="logo__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 20 9 6l3 6 3-6 6 14" />
+            </svg>
+          </span>
+          Infinity Tour
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="menu">
+          <ul class="nav__list">
+            <li><a href="#inicio" class="nav__link is-active">Início</a></li>
+            <li><a href="#passeios" class="nav__link">Passeios</a></li>
+            <li><a href="#pacotes" class="nav__link">Pacotes</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+          <a href="#contato" class="btn btn--primary">Agendar Agora</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img
+          class="hero__bg"
+          src="imagens/foz-do-iguacu.jpg"
+          alt="Cataratas do Iguaçu com arco-íris"
+        />
+        <div class="container hero__content">
+          <h1>Explore Foz do Iguaçu</h1>
+          <p>
+            Natureza, cultura e experiências inesquecíveis em um só lugar. Viva
+            o extraordinário nas maiores quedas d'água do mundo.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="passeios">
+        <div class="container">
+          <h2 class="section__title">Passeios em destaque</h2>
+          <p class="section__subtitle">
+            Escolha seu passeio e consulte a equipe.
+          </p>
+
+          <div class="passeios">
+            <article class="card">
+              <img src="imagens/cataratas.jpg" alt="Cataratas do Iguaçu" />
+              <div class="card__body">
+                <h3>Cataratas do Iguaçu</h3>
+                <p>
+                  Conheça uma das principais atrações turísticas de Foz do
+                  Iguaçu.
+                </p>
+                <a href="#contato" class="card__link">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="imagens/itaipu.jpg" alt="Usina de Itaipu" />
+              <div class="card__body">
+                <h3>Usina de Itaipu</h3>
+                <p>Visite uma das maiores usinas hidrelétricas do mundo.</p>
+                <a href="#contato" class="card__link">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="imagens/city-tour.jpg" alt="City Tour Foz" />
+              <div class="card__body">
+                <h3>City Tour Foz</h3>
+                <p>
+                  Conheça a história, a diversidade cultural e os principais
+                  pontos turísticos de Foz.
+                </p>
+                <a href="#contato" class="card__link">Ver detalhes</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pacotes" hidden></section>
+
+      <section class="section" id="diferenciais">
+        <div class="container">
+          <span class="eyebrow">Diferenciais Turismo Foz</span>
+          <h2 class="section__title section__title--center">
+            Por que reservar conosco?
+          </h2>
+
+          <div class="diferenciais">
+            <article class="diferencial">
+              <span class="diferencial__icon diferencial__icon--verde">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 9a2 2 0 0 0 0 6v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a2 2 0 0 1 0-6V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"
+                  />
+                  <path d="M9 10h6M9 14h6" />
+                </svg>
+              </span>
+              <h3>Passeios incríveis</h3>
+              <p>
+                Ingressos e acessos diretos, sem estresse. Seus bilhetes
+                totalmente garantidos para os melhores marcos de Foz.
+              </p>
+            </article>
+
+            <article class="diferencial">
+              <span class="diferencial__icon diferencial__icon--azul">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="9" cy="8" r="3.5" />
+                  <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
+                  <path d="m16 11 2 2 4-4" />
+                </svg>
+              </span>
+              <h3>Guias especializados</h3>
+              <p>
+                Uma equipe bilíngue e certificada que conhece toda a fauna,
+                flora e história local para enriquecer seu passeio.
+              </p>
+            </article>
+
+            <article class="diferencial">
+              <span class="diferencial__icon diferencial__icon--laranja">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3 4.5 6v5.5c0 4.5 3.1 8 7.5 9.5 4.4-1.5 7.5-5 7.5-9.5V6z"
+                  />
+                </svg>
+              </span>
+              <h3>Transporte seguro</h3>
+              <p>
+                Frota de vans modernas com ar-condicionado, rastreamento e
+                seguro total para a tranquilidade de sua família.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contato">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="#inicio" class="logo logo--light">
+            <span class="logo__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 20 9 6l3 6 3-6 6 14" />
+              </svg>
+            </span>
+            Infinity Tour
+          </a>
+          <p>
+            Descubra as maravilhas de Foz do Iguaçu com a agência líder em
+            receptivos premium. Oferecemos transporte seguro, guias credenciados
+            e passeios personalizados.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#passeios">Passeios</a></li>
+            <li><a href="#pacotes">Pacotes</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#contato">Atendimento</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--contato">
+          <h4>Contato comercial</h4>
+          <address>
+            Av. das Cataratas, 1240 - Vila Yolanda, Foz do Iguaçu - PR
+          </address>
+          <a href="mailto:contato@turismofoz.com.br" class="footer__email"
+            >contato@turismofoz.com.br</a
+          >
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p>&copy; 2026 Infinity Tour - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
