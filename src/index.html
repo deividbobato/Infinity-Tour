@@ -48,19 +48,19 @@
             <li><a href="#pacotes" class="nav__link">Pacotes</a></li>
             <li><a href="#contato" class="nav__link">Contato</a></li>
           </ul>
-              <a
-                href="https://wa.me/554591376652?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio."
-                class="btn btn--primary"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                  Agendar Agora
-                </a>
+          <a
+            href="https://wa.me/554591376652?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20passeio."
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Agendar Agora
+          </a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="home">
       <section class="hero" id="inicio">
         <img
           class="hero__bg"
@@ -73,75 +73,10 @@
             Natureza, cultura e experiências inesquecíveis em um só lugar. Viva
             o extraordinário nas maiores quedas d'água do mundo.
           </p>
+
+          <a href="#passeios" class="btn btn--accent btn--lg">Ver passeios →</a>
         </div>
       </section>
-
-      <section class="section" id="passeios">
-        <div class="container">
-          <h2 class="section__title">Passeios em destaque</h2>
-          <p class="section__subtitle">
-            Escolha seu passeio e consulte a equipe.
-          </p>
-
-          <div class="passeios">
-            <article class="card">
-              <img src="imagem/cataratas.png" alt="Cataratas do Iguaçu" />
-              <div class="card__body">
-                <h3>Cataratas do Iguaçu</h3>
-                <p>
-                  Conheça uma das principais atrações turísticas de Foz do
-                  Iguaçu.
-                </p>
-                   <a
-                    href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20passeio%20Cataratas%20do%20Igua%C3%A7u."
-                    class="card__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                  Veja detalhes
-                </a>
-              </div>
-            </article>
-
-            <article class="card">
-              <img src="imagem/itaipu.png" alt="Usina de Itaipu" />
-              <div class="card__body">
-                <h3>Usina de Itaipu</h3>
-                <p>Visite uma das maiores usinas hidrelétricas do mundo.</p>
-                    <a
-                      href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20passeio%20Usina%20de%20Itaipu."
-                      class="card__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Veja detalhes
-                    </a>
-              </div>
-            </article>
-
-            <article class="card">
-              <img src="imagem/turismo.png" alt="City Tour Foz" />
-              <div class="card__body">
-                <h3>City Tour Foz</h3>
-                <p>
-                  Conheça a história, a diversidade cultural e os principais
-                  pontos turísticos de Foz.
-                </p>
-                    <a
-                      href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20passeio%20City%20Tour%20Foz."
-                      class="card__link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                    Veja detalhes
-                  </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="pacotes" hidden></section>
 
       <section class="section" id="diferenciais">
         <div class="container">
@@ -223,6 +158,327 @@
           </div>
         </div>
       </section>
+
+      <section class="section" id="passeios">
+        <div class="container">
+          <h2 class="section__title">Passeios em destaque</h2>
+          <p class="section__subtitle">
+            Conheça nossos principais passeios e atrações imperdíveis em Foz do
+            Iguaçu.
+          </p>
+
+          <div class="passeios">
+            <article class="card">
+              <img src="imagem/cataratas.png" alt="Cataratas do Iguaçu" />
+              <div class="card__body">
+                <h3>Cataratas do Iguaçu</h3>
+                <p class="card__meta">Duração: 3h</p>
+                <p>
+                  Uma das 7 maravilhas naturais do mundo. Uma experiência
+                  imersiva pela trilha das famosas quedas.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn--primary btn--block"
+                  data-passeio="cataratas"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="imagem/itaipu.png" alt="Usina de Itaipu" />
+              <div class="card__body">
+                <h3>Usina de Itaipu</h3>
+                <p class="card__meta">Duração: 2h</p>
+                <p>Conheça a maior usina hidrelétrica em produção de energia limpa do planeta. Engenharia colossal.</p>
+                <button
+                  type="button"
+                  class="btn btn--primary btn--block"
+                  data-passeio="itaipu"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="imagem/marco.png" alt="Marco das 3 Fronteiras" />
+              <div class="card__body">
+                <h3>Marco das 3 Fronteiras</h3>
+                <p class="card__meta">Duração: 3h</p>
+                <p>O encontro de 3 países: Brasil, Argentina e Paraguai. Show cultural e pôr do sol inesquecível.</p>
+                <button 
+                  type="button" 
+                  class="btn btn--primary btn--block" 
+                  data-passeio="marco"
+                >
+                  Ver detalhes</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="imagem/images.jpeg" alt="Parque das Aves" />
+              <div class="card__body">
+                <h3>Parque das Aves</h3>
+                <p class="card__meta">Duração: 2h</p>
+                <p>Mais de 1.300 aves de 143 espécies da Mata Atlântica em viveiros de imersão espetaculares.</p>
+                <button 
+                  type="button" 
+                  class="btn btn--primary btn--block" 
+                  data-passeio="aves"
+                >                  
+                  Ver detalhes
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pacotes" hidden></section>
+
+      <section class="section section--cinza" id="pacotes">
+        <div class="container">
+          <span class="eyebrow eyebrow--left">Pacotes &amp; Roteiros</span>
+          <h2 class="section__title">
+            Conheça nossos roteiros completos e aproveite ainda mais sua viagem para Foz do Iguaçu.
+          </h2>
+
+          <div class="pacotes">
+            <article class="pacote">
+              <div class="pacote__img">
+                <img src="imagem/cataratas.png" alt="Foz em 2 dias" />
+                <span class="pacote__tag pacote__tag--verde">2 DIAS</span>
+              </div>
+              <div class="pacote__body">
+                <h3>Foz em 2 dias</h3>
+                <p class="pacote__sub">3 passeios inclusos</p>
+                <ul class="pacote__lista">
+                  <li>Cataratas do Iguaçu</li>
+                  <li>Parque das Aves</li>
+                  <li>Marco das 3 Fronteiras</li>
+                </ul>
+              </div>
+              <div class="pacote__rodape">
+                <div><small>A partir de</small><strong>R$ 490</strong></div>
+                <a class="btn btn--outline-verde" target="_blank" rel="noopener noreferrer"
+                   href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20pacote%20Foz%20em%202%20dias.">Ver pacote</a>
+              </div>
+            </article>
+
+            <article class="pacote">
+              <div class="pacote__img">
+                <img src="imagem/itaipu.png" alt="Foz em 3 dias" />
+                <span class="pacote__tag pacote__tag--laranja">3 DIAS</span>
+              </div>
+              <div class="pacote__body">
+                <h3>Foz em 3 dias</h3>
+                <p class="pacote__sub">5 passeios inclusos</p>
+                <ul class="pacote__lista">
+                  <li>Cataratas do Iguaçu</li>
+                  <li>Usina de Itaipu</li>
+                  <li>Parque das Aves</li>
+                  <li>Marco das 3 Fronteiras</li>
+                  <li>Almoço Premium Porto Canoas</li>
+                </ul>
+              </div>
+              <div class="pacote__rodape">
+                <div><small>A partir de</small><strong>R$ 780</strong></div>
+                <a class="btn btn--outline-verde" target="_blank" rel="noopener noreferrer"
+                   href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20pacote%20Foz%20em%203%20dias.">Ver pacote</a>
+              </div>
+            </article>
+
+            <article class="pacote">
+              <div class="pacote__img">
+                <img src="imagem/turismo.png" alt="Experiência Completa" />
+                <span class="pacote__tag pacote__tag--azul">COMPLETO</span>
+              </div>
+              <div class="pacote__body">
+                <h3>Experiência Completa</h3>
+                <p class="pacote__sub">7 passeios inclusos</p>
+                <ul class="pacote__lista">
+                  <li>Cataratas Brasil &amp; Argentina</li>
+                  <li>Macuco Safari de Barco</li>
+                  <li>Voo de Helicóptero</li>
+                  <li>Itaipu Especial</li>
+                  <li>Parque das Aves</li>
+                  <li>Marco Premium</li>
+                  <li>Jantar Temático Show</li>
+                </ul>
+              </div>
+              <div class="pacote__rodape">
+                <div><small>A partir de</small><strong>R$ 1.450</strong></div>
+                <a class="btn btn--outline-verde" target="_blank" rel="noopener noreferrer"
+                   href="https://wa.me/554591376652?text=Ol%C3%A1!%20Tenho%20interesse%20no%20pacote%20Experi%C3%AAncia%20Completa.">Ver pacote</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      </section>
+
+      
+    </main>
+
+    <main class="view" id="view-detalhe" hidden>
+      <section class="section">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Você está em">
+            <a href="#passeios">Passeios</a>
+            <span>›</span>
+            <strong id="det-breadcrumb"></strong>
+          </nav>
+
+          <div class="detalhe">
+            <img 
+              class="detalhe__img" 
+              id="det-img" 
+              src="" 
+              alt="" 
+              
+            />
+            <div class="detalhe__box">
+              <h1 id="det-nome"></h1>
+              <p class="detalhe__desc" id="det-desc"></p>
+
+              <div class="detalhe__info">
+                <div><span>Duração</span><strong id="det-duracao"></strong></div>
+                <div><span>Saídas/Retornos</span><strong id="det-saidas"></strong></div>
+              </div>
+
+              <h3>O que está incluso:</h3>
+              <ul class="inclusos" id="det-inclusos"></ul>
+
+              <p class="capacidade">Capacidade por veículo: Mínimo 2, máximo 15 passageiros.</p>
+
+              <button type="button" class="btn btn--accent btn--lg btn--block" id="btn-selecionar">
+                Selecionar este passeio →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="view" id="view-agendar" hidden>
+      <section class="section">
+        <div class="container">
+          <h1 class="view__titulo">Agende seu passeio</h1>
+          <p class="section__subtitle">
+            Escolha as melhores datas e defina a quantidade de passageiros para seu receptivo personalizado.
+          </p>
+
+          <div class="agenda">
+            <div class="agenda__col">
+              <div class="painel">
+                <h2>Data de início</h2>
+                <div class="data-escolhida"><span id="txt-inicio">Selecione uma data</span></div>
+                <div class="cal" id="cal-inicio"></div>
+              </div>
+              <div class="painel">
+                <h2>Data de saída</h2>
+                <div class="data-escolhida"><span id="txt-saida">Selecione uma data</span></div>
+                <div class="cal" id="cal-saida"></div>
+              </div>
+            </div>
+
+            <div class="painel painel--pessoas">
+              <h2>Quantidade de pessoas</h2>
+              <p class="painel__texto">Informe quantos passageiros irão realizar o passeio contratado.</p>
+
+              <div class="contador">
+                <button 
+                  type="button" 
+                  id="btn-menos" 
+                  aria-label="Diminuir"
+                >
+                -
+              </button>
+                <span id="qtd">2</span>
+                <button type="button" id="btn-mais" aria-label="Aumentar">+</button>
+              </div>
+
+              <div class="aviso">
+                A quantidade deve estar obrigatoriamente entre 2 e 15 pessoas para garantir o receptivo privativo.
+              </div>
+              <p class="erro" id="agenda-erro" hidden></p>
+
+              <button type="button" class="btn btn--accent btn--lg btn--block" id="btn-resumo">
+                Continuar para o Resumo →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="view" id="view-resumo" hidden>
+      <section class="section">
+        <div class="container">
+          <h1 class="view_titulo view_titulo--center">Resumo da solicitação</h1>
+          <p class="section_subtitle view_sub--center">Revise os dados antes de confirmar.</p>
+
+          <div class="resumo">
+            <img id="res-img" src="" alt="" />
+            <dl class="resumo__lista">
+              <div><dt>Passeio Selecionado</dt><dd id="res-passeio"></dd></div>
+              <div><dt>Duração Estimada</dt><dd id="res-duracao"></dd></div>
+              <div><dt>Data de Início</dt><dd id="res-inicio"></dd></div>
+              <div><dt>Data de Saída</dt><dd id="res-saida"></dd></div>
+              <div><dt>Quantidade de Pessoas</dt><dd id="res-pessoas"></dd></div>
+            </dl>
+            <div class="resumo__acoes">
+              <button type="button" class="btn btn--outline" data-goto="agendar">Editar Dados</button>
+              <button type="button" class="btn btn--accent btn--lg" id="btn-confirmar">Confirmar Solicitação</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="view" id="view-sucesso" hidden>
+      <section class="section">
+        <div class="container">
+          <div class="sucesso">
+            <span class="sucesso__icone">
+              <svg 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="3"
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                aria-hidden="true">
+                <path d="m5 12 5 5 9-10" />
+              </svg>
+            </span>
+            <h1>Solicitação enviada com sucesso!</h1>
+            <p>
+              A nossa equipe entrará em contato consigo em breve para finalizar os detalhes
+              e realizar a emissão dos seus bilhetes. Obrigado por escolher a Infinity Tour!
+            </p>
+            <div class="sucesso__box">
+              <strong>O que acontece agora?</strong>
+              <p>1. Abrimos o WhatsApp com o resumo completo da sua solicitação.</p>
+              <p>2. Nosso especialista confirmará tudo com você em até 15 minutos.</p>
+            </div>
+            <button 
+              type="button" 
+              class="btn btn--primary btn--lg" 
+              data-goto="home"
+            >
+              Voltar para o início
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" id="contato">
@@ -283,9 +539,58 @@
       </div>
 
       <div class="container footer__bottom">
-        <p>&copy; 2026 Infinity Tour - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Infinity Tour. Todos os direitos reservados. CNPJ: 24.582.110/0001-99</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">
+            <svg 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+            >
+              <rect 
+              x="2"
+              y="2" 
+              width="20" 
+              height="20" 
+              rx="5"
+              />
+              <path 
+                d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"
+              />
+              <path d="M17.5 6.5h.01"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+            >
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+            >
+            <path d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.9 0-8.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 11.8a29 29 0 0 0 .4 5.3 2.8 2.8 0 0 0 2 2c1.7.5 8.6.5 8.6.5s6.900 0 8.600-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .4-5.3 29 29 0 0 0-.5-5.4z"/><path d="m9.75 15 5.75-3.25L9.75 8.5z"/>
+          </svg>
+          </a>
+        </div>
       </div>
-        </footer>
+    </footer>
+    </footer>
 
     <a
       href="https://wa.me/554591376652?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
@@ -309,8 +614,6 @@
       </svg>
       <span>WhatsApp</span>
     </a>
-
-    <script src="script.js"></script>
 
     <script src="script.js"></script>
   </body>
